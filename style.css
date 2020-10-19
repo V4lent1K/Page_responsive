@@ -1,0 +1,679 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+/*Reset*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Fin Reset*/
+
+
+/*Body*/
+
+body {
+	color: #000000;
+	font-family: 'Ubuntu', sans-serif;
+	
+}
+
+/*Fin body*/
+
+
+/*Wrapper*/
+
+h2 {
+	font-size: 120%;
+	font-weight: bold;
+}
+
+p {
+	font-size: 100%;
+	line-height: 1.25;
+}
+
+/*Fin Wrapper*/
+
+
+/*Header*/
+
+header {
+	height: 100%;
+}
+
+.accueil {
+	max-width: 100%;
+	height: 100%;
+	height: auto;
+	float: left;
+	position: relative;
+}
+
+
+
+.title h2 {
+	font-size: 150%;
+	font-weight: bold;
+}
+
+.title p {
+	font-size: 120%;
+}
+
+.menu {
+	font-size: 100%;
+	position: fixed;
+	top: 0;
+	right: 25px;
+	bottom: 0;
+}
+
+.menu a {
+	text-decoration: none;
+	color: black;
+}
+
+.menu:hover {
+	opacity: 0.5;
+}
+
+/*Fin Header*/
+
+
+/*NAV*/
+
+nav {
+	display: none;
+}
+
+.ham {
+	background-image: url(img/burg.png);
+	background-position: left top;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+}
+
+.menu-plein-ecran .ham {
+	background-position: right top;
+}
+
+.close .ham {
+	background-position: left bottom;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+}
+
+.menu-plein-ecran {
+	background-color: hsl(163, 27.7%, 32%);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display: none;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.menu-plein-ecran:target {
+	display: block;
+	text-decoration: none;
+}
+
+.close {
+	font-size: 100%;
+	position: fixed;
+	top: 0;
+	right: 35px;
+	bottom: 0;
+}
+
+.close a {
+	text-decoration: none;
+	color: black;
+}
+
+.close:hover {
+	opacity: 0.5;
+}
+
+
+nav li {
+	margin-left: 5%;
+	margin-top: 2.5%;
+}
+
+nav li a {
+	text-decoration: none;
+	color: white;
+	font-size: 250%;
+}
+
+nav li a:hover {
+	color: #f44336;
+}
+
+/*Fin NAV*/
+
+
+/*Main*/
+
+main {
+	display: block;
+    padding-top: 70%;
+    padding-bottom: 5%;
+}
+.lls {
+    text-decoration: none;
+    color: #549FF3;
+}
+
+.lls:hover {
+    color: #FF0000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Fin Main*/
+
+
+@media (min-width: 300px){
+	
+.title {
+	margin-left: 5%;
+	position: absolute;
+	top: 15%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+/*Colonne*/
+
+.col {
+	display: inline-block;
+}
+
+.row {
+	overflow: hidden;
+}
+
+.col-1 {
+    width: 100%;
+}
+
+.col-2 {
+    width: 100%;
+}
+
+.col-2-5 {
+    width: 100%;
+}
+
+.col-3 {
+    width: 100%;
+}
+
+.col-4 {
+    width: 100%;
+}
+
+.has-gutter {
+    margin: 1%;
+}
+
+.ml0 {
+    margin-left: 0;
+}
+
+.mr0 {
+    margin-right: 0;
+}
+/*Fin colonne*/
+	
+	
+/*Form*/
+
+form {
+    background-image: url("img/bkg-form.jpg");
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+    padding: 2.5%;
+}
+
+fieldset {
+    width: 100%;
+    background-color: rgba(250,250,250,0.5);
+    border-radius: 25px;
+    margin: auto;
+    padding: 1%;
+    height: auto;
+}
+
+fieldset h2 {
+    color: #666699;
+    font-weight: bold;
+    padding: 1.5%;
+}
+
+fieldset label {
+    color: #666699;
+    font-weight: bold;
+    margin: auto;
+    padding: 1.5%;
+    margin-top: 2%;
+}
+
+fieldset input {
+    width: 55%;
+    margin-top: 2%;
+}
+
+fieldset textarea {
+    vertical-align: top;
+    width: 55%;
+    height: 25%;
+    margin-top: 2%;
+}
+
+.bouton {
+    background-image: linear-gradient(to bottom, #b9bbde, #666699);
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 5px;
+    display: block;
+    margin: auto;
+    width: 25%;
+}
+
+.bouton:hover {
+    background-image: linear-gradient(to bottom, #666666, #444444);
+}
+
+.formulaire {
+    padding: 2%;
+}
+
+/*Fin Form*/
+
+
+
+/*Footer*/
+
+footer {
+	background-color: #FF7FCF;
+	height: auto;
+	padding: 2.5%;
+}
+
+footer li {
+	background-color: rgba(120,120,120,0.2);
+	width: 100%;
+	border-left: 10px solid ;
+	color: #EDEDED;
+	margin-bottom: 0.25%;
+}
+
+footer a {
+	text-decoration: none;
+	color: #EDEDED;
+	padding-left: 2%;
+}
+
+footer li:hover {
+	color: #ffffff;
+	background-color: rgb(120, 120, 120, 0.8);
+	border-color: rgb(120, 120, 120, 0.8);
+	width: 100%;
+}
+
+/*Fin Footer*/
+}
+
+
+@media (min-width: 700px){
+
+.title {
+	margin-left: 5%;
+	position: absolute;
+	top: 40%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+/*Colonne*/
+.col {
+	display: inline-block;
+}
+
+.col2 {
+	width: calc((100% / 12) * 5)
+}
+
+.col3 {
+    width: calc((100% / 12) * 2.80);
+}
+
+.col4 {
+    width: calc((100% / 12) * 3.7);
+}
+
+.col6 {
+    width: 100%;
+}
+/*Fin colonne*/
+
+/*Fin colonne*/
+	
+	
+/*Form*/
+
+form {
+    background-image: url("img/bkg-form.jpg");
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+
+}
+
+fieldset {
+    width: 100%;
+    background-color: rgba(250,250,250,0.5);
+    border-radius: 25px;
+    margin: auto;
+    padding: 1%;
+    height: auto;
+}
+
+fieldset h2 {
+    color: #666699;
+    font-weight: bold;
+    padding: 1.5%;
+}
+
+fieldset label {
+    color: #666699;
+    font-weight: bold;
+    margin: auto;
+    padding: 1.5%;
+    margin-top: 2%;
+}
+
+fieldset input {
+    width: 35%;
+    margin-top: 2%;
+}
+
+fieldset textarea {
+    vertical-align: top;
+    width: 35%;
+    height: 10%;
+    margin-top: 2%;
+}
+
+.bouton {
+    background-image: linear-gradient(to bottom, #b9bbde, #666699);
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 25px;
+    display: block;
+    margin: auto;
+    width: 15%;
+}
+
+.bouton:hover {
+    background-image: linear-gradient(to bottom, #666666, #444444);
+}
+
+.formulaire {
+    padding: 2%;
+}
+
+/*Fin Form*/
+
+
+
+/*Footer*/
+
+footer {
+	background-color: #FF7FCF;
+	height: auto;
+	padding: 2.5%;
+}
+
+footer li {
+	background-color: rgba(120,120,120,0.2);
+	width: 95%;
+	border-left: 10px solid ;
+	color: #EDEDED;
+	margin-bottom: 0.25%;
+}
+
+footer a {
+	text-decoration: none;
+	color: #EDEDED;
+	padding-left: 2%;
+}
+
+footer li:hover {
+	color: #ffffff;
+	background-color: rgb(120, 120, 120, 0.8);
+	border-color: rgb(120, 120, 120, 0.8);
+	width: 95%;
+}
+
+/*Fin Footer*/
+}
+
+
+@media (min-width: 900px){
+	
+.title {
+	margin-left: 5%;
+	position: absolute;
+	top: 75%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+	
+/*Colonne*/
+
+.col {
+	display: inline-block;
+}
+
+.row {
+	overflow: hidden;
+}
+
+.col-1 {
+    width: calc((100% / 12) * 1);
+}
+
+.col-2 {
+    width: calc((100% / 12) * 2);
+}
+
+.col-2-5 {
+    width: calc((100% / 12) * 2.55);
+}
+
+.col-3 {
+    width: calc((100% / 12) * 3);
+}
+
+.col-4 {
+    width: calc((100% / 12) * 4);
+}
+
+.has-gutter {
+    margin: 1%;
+}
+
+.ml0 {
+    margin-left: 0;
+}
+
+.mr0 {
+    margin-right: 0;
+}
+/*Fin colonne*/
+	
+	
+/*Form*/
+
+form {
+    background-image: url("img/bkg-form.jpg");
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+    padding: 2.5%;
+}
+
+fieldset {
+    width: 900px;
+    background-color: rgba(250,250,250,0.5);
+    border-radius: 25px;
+    margin: auto;
+    padding: 1%;
+    height: auto;
+}
+
+fieldset h2 {
+    color: #666699;
+    font-weight: bold;
+    padding: 1.5%;
+}
+
+fieldset label {
+    color: #666699;
+    font-weight: bold;
+    margin: auto;
+    padding: 1.5%;
+    margin-top: 2%;
+}
+
+fieldset input {
+    width: 35%;
+    margin-top: 2%;
+}
+
+fieldset textarea {
+    vertical-align: top;
+    width: 35%;
+    height: 10%;
+    margin-top: 2%;
+}
+
+.bouton {
+    background-image: linear-gradient(to bottom, #b9bbde, #666699);
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 35px;
+    display: block;
+    margin: auto;
+    width: 15%;
+}
+
+.bouton:hover {
+    background-image: linear-gradient(to bottom, #666666, #444444);
+}
+
+.formulaire {
+    padding: 2%;
+}
+
+/*Fin Form*/
+
+
+
+/*Footer*/
+
+footer {
+	background-color: #FF7FCF;
+	height: auto;
+	padding: 2.5%;
+}
+
+footer li {
+	background-color: rgba(120,120,120,0.2);
+	width: 100%;
+	border-left: 10px solid ;
+	color: #EDEDED;
+	margin-bottom: 0.25%;
+}
+
+footer a {
+	text-decoration: none;
+	color: #EDEDED;
+	padding-left: 2%;
+}
+
+footer li:hover {
+	color: #ffffff;
+	background-color: rgb(120, 120, 120, 0.8);
+	border-color: rgb(120, 120, 120, 0.8);
+	width: 100%;
+}
+
+/*Fin Footer*/
+
+}
+
+
+
+
